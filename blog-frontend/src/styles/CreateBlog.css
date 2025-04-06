@@ -1,0 +1,172 @@
+/* Reset & Base */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f5f7fa;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Container */
+  .create-blog-container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 2rem;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.07);
+    animation: fadeIn 0.6s ease-in-out;
+  }
+  
+  /* Heading */
+  .create-blog-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form */
+  .create-blog-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  /* Form group */
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    font-size: 0.95rem;
+    color: #444;
+    margin-bottom: 6px;
+  }
+  
+  /* Input styles */
+  .form-group input,
+  .form-group textarea {
+    padding: 12px 14px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    outline: none;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+  }
+  
+  /* Buttons */
+  .submit-button,
+  .cancel-button {
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .submit-button {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .submit-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cancel-button {
+    background-color: #e0e0e0;
+    color: #333;
+    margin-left: 10px;
+  }
+  
+  .cancel-button:hover {
+    background-color: #d6d6d6;
+  }
+  
+  /* Button row */
+  .button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  /* Messages */
+  .error-message {
+    color: red;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  
+  .success-message {
+    color: green;
+    text-align: center;
+    font-size: 1rem;
+    animation: fadeOut 3s ease-in forwards;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-15px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
+  }
+  
+  /* Responsive for small screens */
+  @media (max-width: 576px) {
+    .create-blog-container {
+      padding: 1.2rem;
+    }
+  
+    .create-blog-container h1 {
+      font-size: 1.5rem;
+    }
+  
+    .form-group input,
+    .form-group textarea {
+      font-size: 0.95rem;
+      padding: 10px;
+    }
+  
+    .submit-button,
+    .cancel-button {
+      font-size: 0.9rem;
+      padding: 10px 14px;
+    }
+  
+    .button-group {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  

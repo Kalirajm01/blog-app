@@ -1,0 +1,24 @@
+.blog-detail-container {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.blog-detail-container h1 {
+    font-size: 2rem;
+}
+
+.blog-author,
+.blog-date {
+    font-size: 0.9rem;
+    color: #555555;
+}
+
+.blog-content {
+    font-size: 1rem;
+    line-height: 1.6;
+}

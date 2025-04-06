@@ -1,0 +1,137 @@
+/* General container */
+.container {
+  padding: 1rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Responsive Blog Grid */
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+/* Blog Card */
+.blog-card {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-card h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.blog-card small {
+  color: #777;
+  font-size: 0.85rem;
+}
+
+/* Read More Button */
+.read-more {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 10px 16px;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.read-more:hover {
+  background-color: #0056b3;
+}
+
+/* Blog Actions (Edit & Delete Icons) */
+.blog-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 1.2rem;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.icon:hover {
+  color: #007bff;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.pagination button.active,
+.pagination button:disabled {
+  background-color: #6c757d;
+  cursor: default;
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .blog-card {
+    padding: 1rem;
+  }
+
+  .blog-card h2 {
+    font-size: 1.2rem;
+  }
+
+  .read-more {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+
+  .pagination button {
+    padding: 8px 12px;
+    font-size: 0.85rem;
+  }
+}
+
+.center-text {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.error-text {
+  color: red;
+}
