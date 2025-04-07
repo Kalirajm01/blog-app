@@ -11,15 +11,21 @@
 
 **Responsive Design:** Optimized for both desktop and mobile devices.
 
+
 **Getting Started**
+
 **Prerequisites**
+
 -Node.js (Latest version)
 
 -MongoDB (Database name: blog-app)
 
 -React (Latest version)
 
+
+
 **Installation**
+
 1. Clone the repository:
     git clone https://github.com/Kalirajm01/blog-app
 2. Navigate into the project directory:
@@ -37,7 +43,9 @@
 8. Run the web app
     npm start
 
+
 **Usage**
+
 -Open your browser and navigate to http://localhost:3000.
 
 -Register or log in to create and manage blog posts.
