@@ -2,6 +2,7 @@
 
 
 **Features**
+
 **User Authentication:** Secure registration and login using email and password.
 
 **Blog Post Management:** Users can create, edit, and delete their own blog posts.
